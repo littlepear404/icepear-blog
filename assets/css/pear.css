@@ -18,6 +18,15 @@
   margin-top: 1.25rem;
 }
 
+.pear-comments-giscus {
+  overflow-wrap: anywhere;
+}
+
+.pear-comments-giscus .giscus,
+.pear-comments-giscus .giscus-frame {
+  width: 100%;
+}
+
 .pear-comment-list {
   padding-left: 0;
   list-style: none;
@@ -53,4 +62,3 @@
 .pear-comments-giscus {
   color: var(--secondary);
 }
-
