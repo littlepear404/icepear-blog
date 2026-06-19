@@ -1,0 +1,9 @@
+- id: toggle_theme
+  translation: "切换主题"
+
+- id: go_to_top
+  translation: "回到顶部"
+
+- id: post_link_to
+  translation: "打开文章：{{ .Title }}"
+
