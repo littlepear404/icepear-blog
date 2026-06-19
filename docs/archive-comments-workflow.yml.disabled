@@ -1,5 +1,10 @@
 # Disabled placeholder for a future comments archive workflow.
 #
+# This file is intentionally kept outside `.github/workflows/` for now.
+# Some GitHub credentials cannot push files under `.github/workflows/`
+# without the `workflow` OAuth scope, even when the filename ends with
+# `.disabled`.
+#
 # name: Archive approved comments
 #
 # on:
