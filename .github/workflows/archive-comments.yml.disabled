@@ -1,0 +1,28 @@
+# Disabled placeholder for a future comments archive workflow.
+#
+# name: Archive approved comments
+#
+# on:
+#   schedule:
+#     - cron: "17 */6 * * *"
+#   workflow_dispatch:
+#
+# jobs:
+#   archive-comments:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#         with:
+#           submodules: true
+#
+#       - name: Export reviewed giscus comments
+#         run: |
+#           echo "Future workflow:"
+#           echo "- Read GitHub Discussions/giscus comments on a schedule."
+#           echo "- Group comments by comment_id or post slug."
+#           echo "- Filter unreviewed, blacklisted, or spam comments."
+#           echo "- Write archives to data/comments/posts/*.json."
+#           echo "- Commit changes back to the repository."
+#           echo "- Let Cloudflare Pages rebuild from the updated Git commit."
+

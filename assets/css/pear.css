@@ -1,0 +1,56 @@
+.post-content {
+  line-height: 1.82;
+}
+
+.pear-comments {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.pear-comments h2,
+.pear-comments h3 {
+  margin-top: 0;
+}
+
+.pear-comments-archive,
+.pear-comments-giscus {
+  margin-top: 1.25rem;
+}
+
+.pear-comment-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.pear-comment {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.pear-comment:first-child {
+  border-top: 0;
+}
+
+.pear-comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.pear-comment-author {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.pear-comment-body {
+  margin-top: 0.5rem;
+}
+
+.pear-comments-empty,
+.pear-comments-giscus {
+  color: var(--secondary);
+}
+

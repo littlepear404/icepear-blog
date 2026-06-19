@@ -1,0 +1,10 @@
+{{- if .Params.comments -}}
+<section class="pear-comments" id="comments" aria-labelledby="pear-comments-title">
+  <h2 id="pear-comments-title">评论</h2>
+  {{- partial "pear-comments-archive.html" . -}}
+  {{- if .Params.giscus -}}
+    {{- partial "pear-comments-giscus.html" . -}}
+  {{- end -}}
+</section>
+{{- end -}}
+

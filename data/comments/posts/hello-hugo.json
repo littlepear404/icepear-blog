@@ -1,0 +1,12 @@
+{
+  "comments": [
+    {
+      "id": "example-1",
+      "author": "pear",
+      "date": "2026-06-20T00:00:00+08:00",
+      "url": "https://github.com/example/discussions/1#discussioncomment-1",
+      "body": "这是一条示例归档评论，用于验证 Hugo 构建时可以从 `data/comments/posts/hello-hugo.json` 渲染静态评论。"
+    }
+  ]
+}
+

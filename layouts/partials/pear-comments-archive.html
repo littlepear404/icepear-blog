@@ -1,0 +1,28 @@
+{{- $commentID := .Params.comment_id | default .Slug | default .File.ContentBaseName -}}
+{{- $archive := index site.Data.comments.posts $commentID -}}
+<div class="pear-comments-archive" aria-labelledby="pear-comments-archive-title">
+  <h3 id="pear-comments-archive-title">归档评论</h3>
+  {{- with $archive.comments -}}
+    <ol class="pear-comment-list">
+      {{- range . -}}
+      <li class="pear-comment">
+        <article>
+          <header class="pear-comment-meta">
+            <span class="pear-comment-author">{{ .author }}</span>
+            {{- with .url }}
+            <a class="pear-comment-link" href="{{ . }}" rel="nofollow noopener">#</a>
+            {{- end }}
+            {{- with .date }}
+            <time datetime="{{ . }}">{{ . }}</time>
+            {{- end }}
+          </header>
+          <div class="pear-comment-body">{{ .body | markdownify }}</div>
+        </article>
+      </li>
+      {{- end -}}
+    </ol>
+  {{- else -}}
+    <p class="pear-comments-empty">暂无已归档评论。</p>
+  {{- end -}}
+</div>
+
