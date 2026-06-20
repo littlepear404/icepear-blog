@@ -1,7 +1,7 @@
 baseURL = "https://icepear.top/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh"
-title = "littlepear404的blog"
+title = "littlepear404的冰屋"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -36,6 +36,112 @@ ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
 hideFooter = false
+
+[params.profileMode]
+enabled = false
+
+[params.homeInfoParams]
+enabled = false
+title = "littlepear404"
+subtitle = "Question everything. Learn something. Answer nothing."
+imageUrl = "images/avatar.jpg"
+imageTitle = "littlepear404"
+imageWidth = 160
+imageHeight = 160
+
+[params.pearHome]
+enabled = true
+avatar = "/images/avatar.jpg"
+name = "littlepear404"
+subtitle = "Question everything. Learn something. Answer nothing."
+
+[[params.pearHome.links]]
+name = "GitHub"
+url = "https://github.com/littlepear404"
+class = "github"
+icon = "github"
+
+[[params.pearHome.links]]
+name = "X"
+url = "https://x.com/littlepear404"
+class = "x"
+icon = "x"
+
+[[params.pearHome.links]]
+name = "知乎"
+url = "https://www.zhihu.com/people/littlepear-92"
+class = "zhihu"
+icon = "zhihu"
+
+[[params.pearHome.links]]
+name = "Bilibili"
+url = "https://space.bilibili.com/33629459"
+class = "bilibili"
+icon = "bilibili"
+
+[[params.pearHome.links]]
+name = "微博"
+url = "https://weibo.com/u/5384420219"
+class = "weibo"
+icon = "weibo"
+
+[[params.pearHome.links]]
+name = "Linux.do"
+url = "https://linux.do/u/littlepear404/summary"
+class = "linuxdo"
+icon = "linuxdo"
+
+[[params.pearHome.links]]
+name = "Steam"
+url = "https://steamcommunity.com/id/littlepear404"
+class = "steam"
+icon = "steam"
+
+[[params.pearHome.links]]
+name = "Spotify"
+url = "https://open.spotify.com/user/313lfgz4ltld7peuwgonknbgxapy"
+class = "spotify"
+icon = "spotify"
+
+[[params.pearHome.links]]
+name = "Discord"
+url = "https://discord.com/users/806766195155271691"
+class = "discord"
+icon = "discord"
+
+[[params.pearHome.links]]
+name = "Bangumi"
+url = "https://bgm.tv/user/littlepear"
+class = "bangumi"
+icon = "bangumi"
+
+[[params.pearHome.links]]
+name = "RSS"
+url = "/index.xml"
+class = "rss"
+icon = "rss"
+
+[[params.pearHome.links]]
+name = "Email"
+url = "mailto:littlepear404@vip.qq.com"
+class = "email"
+icon = "email"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/littlepear404"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/littlepear404"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:littlepear404@vip.qq.com"
 
 [params.assets]
 disableFingerprinting = false

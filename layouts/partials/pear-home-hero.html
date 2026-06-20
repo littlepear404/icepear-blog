@@ -1,0 +1,35 @@
+{{- with site.Params.pearHome -}}
+{{- if .enabled -}}
+<section class="pear-home-hero" aria-label="个人主页">
+  {{- with .avatar }}
+  <img class="pear-home-avatar" src="{{ . | relURL }}" alt="{{ site.Params.pearHome.name | default site.Title }}">
+  {{- end }}
+
+  <h1 class="pear-home-name">{{ .name | default site.Title }}</h1>
+
+  {{- with .subtitle }}
+  <p class="pear-home-subtitle">{{ . | markdownify }}</p>
+  {{- end }}
+
+  {{- with .links }}
+  <nav class="pear-home-socials" aria-label="个人链接">
+    {{- range . }}
+    {{- $url := .url | default "" -}}
+    {{- if $url }}
+    {{- $isExternal := or (hasPrefix $url "http://") (hasPrefix $url "https://") (hasPrefix $url "mailto:") -}}
+    <a class="pear-home-social {{ with .class }}pear-home-social-{{ . }}{{ end }}"
+       href="{{ cond $isExternal $url ($url | relURL) }}"
+       title="{{ .name }}"
+       aria-label="{{ .name }}"
+       {{- if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }}>
+      <span class="pear-home-social-icon" aria-hidden="true">
+        {{- partial "pear-home-social-icon.html" . -}}
+      </span>
+    </a>
+    {{- end }}
+    {{- end }}
+  </nav>
+  {{- end }}
+</section>
+{{- end -}}
+{{- end -}}

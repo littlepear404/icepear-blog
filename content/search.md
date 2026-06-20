@@ -1,6 +1,6 @@
 ---
 title: "搜索"
 layout: "search"
-summary: "搜索全站内容"
+summary: "寻找未知"
 placeholder: "搜索文章"
 ---

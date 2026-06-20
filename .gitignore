@@ -1,6 +1,7 @@
 public/
 resources/
 .hugo_build.lock
+.codex-hugo-preview/
+*.bak
 .DS_Store
 Thumbs.db
-

@@ -1,6 +1,5 @@
 ---
-title: "littlepear404的blog"
-description: "内容优先、长期维护的个人知识沉淀站。"
+title: "littlepear404的冰屋"
+description: "littlepear404的冰屋"
 ---
 
-这里会放长期整理的技术笔记、实践记录和个人知识沉淀。

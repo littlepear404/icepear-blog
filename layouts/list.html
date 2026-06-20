@@ -45,9 +45,13 @@
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
+{{- if .IsHome }}
+{{- partial "pear-home-hero.html" . }}
+{{- end }}
+
 {{- $paginator := .Paginate $pages }}
 
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- if and .IsHome site.Params.homeInfoParams.enabled (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
 {{- end }}
 
@@ -56,7 +60,7 @@
 
 {{- $class := "post-entry" }}
 
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
+{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams.enabled site.Params.pearHome.enabled }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
 {{- else if $term }}
